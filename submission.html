@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300,600' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="columns">
+          <div class="logo" data-interchange="[images/logoS.png,(default)],[images/logoM.png,(medium)],[images/logoL.png(large)]">
+          </div><!-- end logo -->
+          <a href="tel:(801) 375-2228" class="tel" tabindex="-1">(800) 555-1212</a>
+          <ul class="social">
+            <li class="twitter"><a href="http://twitter.com"><span class="hide">twitter</span></a></li>
+            <li class="facebook"><a href="http://facebook.com"><span class="hide">facebook</span></a></li>
+            <li class="plus"><a href="https://plus.google.com/"><span class="hide">google plus</span></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/"><span class="hide">youtube</span></a></li>
+          </ul>
+        </div><!-- end column -->
+      </div><!-- end row -->
+    </header>
+    <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="index.html">About Us</a></li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+              <a href="design.html">Design Principles</a>
+              <ul class="dropdown">
+                <li><a href="wayfinding.html">WayFinding</a></li>
+                <li><a href="alignment.html">Alignment</a></li>
+                <li><a href="effect.html">Aesthetic-Usability Effect</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="active"><a href="submission.html">Submission</a></li>
+            <li class="divider"></li>
+          </ul>
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li class="has-form">
+              <form action="search.php" method="get" enctype="multipart/form-data">
+                <div class="row collapse">
+                  <div class="small-9 columns">
+                    <input type="text" name="search" placeholder="search...">
+                  </div><!-- end column -->
+                  <div class="small-3 columns">
+                    <input type="submit" value="Go" class="button expand alert">
+                  </div><!-- end column -->
+                </div><!-- end row -->
+              </form>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div><!-- end of Navigation -->
+    <div class="row">
+      <div class="column small-12">
+        <h1>Contact Us</h1>
+        <p>Have a question, inquiry, or feedback for Vivek? Just jot it down below and I'll email you back as soon as possible.</p>
+      </div><!-- end column -->
+    </div><!-- end row -->
+    <form data-abide action="FormToEmail.php" method="post" enctype="multipart/form-data">
+      <div class="row">
+        <fieldset>
+          <legend>Developer Information</legend>
+          <div class="small-12 medium-9 column">
+            <div>
+              <label>
+                First Name <small>required</small>
+                <input type="text" name="FIRST:" placeholder="First Name" required>
+              </label>
+              <small class="error">First name is required and should contain only letters.</small>
+            </div>
+            <div>
+              <label>
+                Last Name <small>required</small>
+                <input type="text" name="LAST:" placeholder="Last Name" required>
+              </label>
+              <small class="error">Last name is required and should contain only letters.</small>
+            </div>
+            <label>
+              Email
+              <input type="text" name="EMAIL:" placeholder="Email">
+            </label>
+            <label>
+              Phone
+              <input type="text" name="PHONE:" placeholder="Phone">
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="row">
+        <fieldset>
+          <legend>Website</legend>
+          <div class="small-12 medium-9 column">
+            <div>
+              <label>
+                Website URL <small>required</small>
+                <input type="text" name="URL:" placeholder="http://" required>
+              </label>
+              <small class="error">URL required.</small>
+            </div>
+            <label><input type="checkbox" name="Alignment"> Alignment</label>
+            <label><input type="checkbox" name="Chunking"> Chunking</label>
+            <label><input type="checkbox" name="Consistency"> Consistency</label>
+            <label><input type="checkbox" name="Repetition"> Repetition</label>
+            <label><input type="checkbox" name="Wayfinding"> Wayfinding</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="row">
+        <div class="column small-6 medium-3">
+          <input type="submit" value="Send my Entry" class="button success round expand">
+        </div>
+        <div class="column small-6 medium-9">
+          <a href="index.html" class="button radius">Cancel</a>
+        </div>
+      </div>
+      <input type="hidden" name="subject" value="Submission from Contact Us Form">
+      <input type="hidden" name="redirect" value="thanks.html">
+    </form>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
